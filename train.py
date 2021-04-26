@@ -29,7 +29,7 @@ class classifier():
         self.conditioned = args.conditioned
         self.best_perf = 0.
         self.stats = dict(grad_loss=[], classify_loss=[])
-        print "[%] model name will be", self.model_name
+        print ("[%] model name will be", self.model_name)
 
     def optimizer_module(self, optimizer, forward, out, label_onehot=None):
         optimizer.zero_grad()
